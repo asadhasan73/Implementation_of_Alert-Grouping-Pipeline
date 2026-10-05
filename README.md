@@ -6,7 +6,7 @@ This repository contains an implementation of the original [Alert Grouping Pipel
 
 The repository is intended to support the reproducibility of the implementation, preprocessing, analysis, and results presented in the paper.
 
-## Pre-processing the AIT-ADS
+### Pre-processing the AIT-ADS
 
 To preprocess the AIT-ADS and transform the raw dataset into a format suitable for the Alert Grouping Pipeline, the following Jupyter notebooks are provided:
 
@@ -27,7 +27,7 @@ We acknowledge and make use of the following files and resources from the [Alert
 
 These components were utilized as part of the AIT-ADS preprocessing workflow and adapted where necessary to produce the representation required by the Alert Grouping Pipeline.
 
-## Utilizing the Alert Grouping Pipeline for Analysis and Results
+### Utilizing the Alert Grouping Pipeline for Analysis and Results
 
 The preprocessed AIT-ADS datasets are subsequently provided as input to the original Alert Grouping Pipeline developed by Mete Turhan. The pipeline groups related alerts according to its configured grouping parameters, after which the resulting datasets are analyzed to obtain the metrics reported in the research paper.
 
@@ -78,7 +78,7 @@ The configurable parameters utilized to run this pipeline resort to default valu
 ```
 
 
-## Related Repositories
+### Related Repositories
 
 * **Original Alert Grouping Pipeline:** [Mete Turhan — Alert Grouping Pipeline](https://github.com/MeteTurhan/Alert-grouping-pipeline)
 * **AIT Alert Data Set:** [AIT-ADS](https://github.com/ait-aecid/alert-data-set)
