@@ -1,5 +1,22 @@
 This is the implementation of the original [Alert Grouping Pipeline](https://github.com/MeteTurhan/Alert-grouping-pipeline) developed by Mete Turhan. The pipeline was inspired and built upon [AIT Alert Data Set](https://github.com/ait-aecid/alert-data-set) and this repository covers its implementation on the AIT-ADS for the research paper titled: Reducing Alert Fatigue in Security Operations Centers via a Multi-Stage Alert Grouping Pipeline.
 
+## Pre-processing the AIT-ADS
+
+For pre-processing the AIT-ADS and bringing it into a workable form for our Alert grouping pipeline developed by Mete Turhan, we utilized following jupyter notebook files:
+1. AIT-ADS_pre-processed_exploratory analysis.ipynb; For analyzing the dataset
+2. AIT-ADS_pre_processed_expanded.ipynb: For preprocessing the AIT-ADS files and bring them into .csv format and required column names. This is heavily based on the preprocess.py implementation of [AlertBERT](https://github.com/ait-aecid/AlertBERT/).
+
+
+We acknowledge the use of following files and folder from the [AlertBERT repository](https://github.com/ait-aecid/AlertBERT/)
+- abbrvs.py
+- preprocess.py
+- timestampExtractor.py
+- /server_configs (complete folder)
+
+## Utizling the Alert Grouping Pipeline for Analysis and Results
+
+We utilize the Mete Turhan's developed pipeline to group the Alerts by taking the pre-processed datasets from previous step.
+
 The jupyter notebook files serve the following purpose:
 1. run_pipeline.ipynb: Runs the original Alert Grouping Pipeline with default parameter values and stores the resulting datasets in the /output folder
 2. analyze_pipeline_output.ipynb: Inspects the generated output files to gather metric values and calculate Alert Reduction and Coverage
