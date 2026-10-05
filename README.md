@@ -1,53 +1,9 @@
+This is the implementation of the original Alert Grouping Pipeline developed by Mete Turhan[https://github.com/MeteTurhan/Alert-grouping-pipeline] 
+
 # Alert Grouping Pipeline
 A baseline pipeline for grouping security alerts based on temporal patterns, content similarity, and IP address relationships. This system helps security analysts by reducing alert fatigue and identifying related security incidents.
 
-## Overview
 
-The Alert Grouping Pipeline uses advanced clustering techniques to group related security alerts while maintaining strict temporal constraints. It combines multiple similarity metrics including text analysis, IP address patterns, and entropy calculations to create meaningful alert groupings.
-
-## Key Features
-
-- **Strict Temporal Grouping**: Enforces maximum time gaps between alerts in the same group
-- **Multi-dimensional Similarity**: Analyzes alert names, hosts, descriptions, and IP addresses
-- **IP-Aware Clustering**: Considers IP addresses and subnet relationships for enhanced grouping
-- **Entropy-Based Validation**: Uses information entropy to validate group quality
-- **Memory Efficient**: Handles large datasets with streaming similarity calculations
-- **Configurable Thresholds**: Adjustable parameters for different use cases
-
-### Install Dependencies
-
-```bash
-pip install pandas numpy scikit-learn scipy
-```
-
-### Clone Repository
-
-```bash
-git clone https://github.com/MeteTurhan/alert-grouping-pipeline.git
-cd alert-grouping-pipeline
-```
-
-## Usage
-
-### Basic Usage
-
-```python
-from alert_grouping import AlertGroupingPipeline
-import pandas as pd
-
-# Load your alerts data
-alerts_df = pd.read_csv('your_alerts.csv')
-
-# Initialize the pipeline
-pipeline = AlertGroupingPipeline()
-
-# Run the analysis
-grouped_df, validity_results = pipeline.analyze(alerts_df)
-
-# View results
-print(f"Grouped {len(alerts_df)} alerts into {grouped_df['timely_alert_group'].nunique()} groups")
-print(validity_results.head())
-```
 
 ### Advanced Configuration
 
