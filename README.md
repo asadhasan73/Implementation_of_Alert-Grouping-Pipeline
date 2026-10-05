@@ -1,6 +1,6 @@
 This is the implementation of the original [Alert Grouping Pipeline](https://github.com/MeteTurhan/Alert-grouping-pipeline) developed by Mete Turhan. The pipeline was inspired and built upon [AIT Alert Data Set](https://github.com/ait-aecid/alert-data-set) and this repository covers its implementation on the AIT-ADS for the research paper titled: Reducing Alert Fatigue in Security Operations Centers via a Multi-Stage Alert Grouping Pipeline.
 
-## Pre-processing the AIT-ADS
+### Pre-processing the AIT-ADS
 
 For pre-processing the AIT-ADS and bringing it into a workable form for our Alert grouping pipeline developed by Mete Turhan, we utilized following jupyter notebook files:
 1. AIT-ADS_pre-processed_exploratory analysis.ipynb; For analyzing the dataset
@@ -13,7 +13,7 @@ We acknowledge the use of following files and folder from the [AlertBERT reposit
 - timestampExtractor.py
 - /server_configs (complete folder)
 
-## Utizling the Alert Grouping Pipeline for Analysis and Results
+### Utizling the Alert Grouping Pipeline for Analysis and Results
 
 We utilize the Mete Turhan's developed pipeline to group the Alerts by taking the pre-processed datasets from previous step.
 
@@ -25,7 +25,7 @@ The jupyter notebook files serve the following purpose:
 The zipped_output.zip file contains the resulting datasets from this run and are present in the /output folder
 
 
-## Default Parameters
+### Default Parameters
 
 The configurable parameters utilized to run this pipeline resort to default values as presented here.
 
@@ -39,7 +39,7 @@ The configurable parameters utilized to run this pipeline resort to default valu
 | `time_label` | None | Dataframe column useable as an input if available, to identify and exclude alerts labeled as false_positive during preprocessing  |
 
 
-## Acknowledgments
+### Acknowledgments
 ```
 @software{alertbert,
   title={AlertBERT},
