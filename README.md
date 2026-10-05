@@ -5,7 +5,7 @@ The jupyter notebook files serve the following purpose:
 2. analyze_pipeline_output.ipynb: Inspects the generated output files to gather metric values and calculate Alert Reduction and Coverage
 3. analyze_pipeline_output_part2.ipynb: Provides IDS level analytical results for the generated output
 
-
+The zipped_output.zip file contains the resulting datasets from this run and are present in the /output folder
 
 
 ## Default Parameters
