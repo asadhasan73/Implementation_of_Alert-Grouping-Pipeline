@@ -41,6 +41,12 @@ The configurable parameters utilized to run this pipeline resort to default valu
 
 ## Acknowledgments
 ```
+@software{alertbert,
+  title={AlertBERT},
+  author={{AIT Austrian Institute of Technology -- AECID}},
+  year={2026},
+  url={https://github.com/ait-aecid/AlertBERT}
+}
 @software{alert_grouping_pipeline,
   title={Alert Grouping Pipeline},
   author={Mete Turhan},
